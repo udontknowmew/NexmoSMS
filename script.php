@@ -2,10 +2,10 @@
 
 require_once(__DIR__ . '/vendor/autoload.php');
 
-define('API_KEY', '9e0719a8'); // use your fuckin key
-define('API_SECRET', 'q7g2VwgXcCKHyeRa'); // also ur fuckin secret
+define('API_KEY', ''); // use your fuckin key
+define('API_SECRET', ''); // also ur fuckin secret
 
-define('SMS_FROM', 'TLNET');
+define('SMS_FROM', '');
 define('SMS_BODY', file_get_contents(__DIR__ . '/resource/message.txt'));
 
 $client = new Nexmo\Client(new Nexmo\Client\Credentials\Basic(API_KEY, API_SECRET));
